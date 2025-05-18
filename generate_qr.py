@@ -4,9 +4,6 @@ def generate_qr_code(url, filename="qr_code.png"):
     # Create a QRCode object with desired settings
     qr = qrcode.QRCode(
         version=1,  # size of the QR Code
-        error_correction=qrcode.constants.ERROR_CORRECT_L,  
-        box_size=10,  
-        border=4,  # thickness of border
     )
     
     # Add the URL to the QR code
